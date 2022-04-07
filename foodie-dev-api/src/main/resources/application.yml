@@ -1,5 +1,5 @@
 server:
-  port: 51605
+  port: 51401
   tomcat:
     uri-encoding: UTF-8
   max-http-header-size: 80KB
