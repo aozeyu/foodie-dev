@@ -10,6 +10,12 @@ public class Stu {
 
     private Integer age;
 
+    public Stu(Integer id, String name, Integer age) {
+        this.id = id;
+        this.name = name;
+        this.age = age;
+    }
+
     /**
      * @return id
      */

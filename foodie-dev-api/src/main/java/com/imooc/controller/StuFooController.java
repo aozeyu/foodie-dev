@@ -1,5 +1,6 @@
 package com.imooc.controller;
 
+import com.imooc.pojo.Stu;
 import com.imooc.service.StuService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -27,8 +28,8 @@ public class StuFooController {
         stuService.updateStu(id);
         return "OK";
     }
-    @PutMapping("/deleteStu")
-    public Object deleteStul(int id){
+    @PostMapping ("/deleteStu")
+    public Object deleteStu(int id){
         stuService.deleteStu(id);
         return "OK";
     }

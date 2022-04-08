@@ -4,7 +4,7 @@ import com.imooc.pojo.Stu;
 
 public interface StuService {
     public Stu getStuInfo(int id);
-    public void saveStu();
-    public void updateStu(int id);
-    public void deleteStu();
+    public int saveStu();
+    public int updateStu(int id);
+    public int deleteStu(int id);
 }

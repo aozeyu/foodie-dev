@@ -20,17 +20,21 @@ public class StuServiceIml implements StuService {
     }
 
     @Override
-    public void saveStu() {
-
+    public int saveStu() {
+        return stuMapper.insert(new Stu(1020,"jack",39));
     }
 
     @Override
-    public void updateStu(int id) {
-
+    public int updateStu(int id) {
+        return stuMapper.updateByPrimaryKeySelective(new Stu(id,"lucy",35));
     }
 
     @Override
-    public void deleteStu() {
-
+    public int deleteStu(int id) {
+        return stuMapper.deleteByPrimaryKey(id);
     }
+
+
+
+
 }
